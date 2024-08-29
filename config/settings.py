@@ -27,6 +27,7 @@ INSTALLED_APPS = [
     'cart.apps.CartConfig',
     'mptt',  # Древовидное меню
     'debug_toolbar',  # Дебаг тулбар
+    'django_bootstrap5',
 ]
 
 INTERNAL_IPS = [

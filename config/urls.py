@@ -9,7 +9,9 @@ from django.conf.urls.static import static
 from article import views
 
 urlpatterns = [
-    path('catalog/', include(('catalog.urls', 'catalog'), namespace='catalog')),
+    path('catalog/', include((
+        'catalog.urls', 'catalog'
+    ), namespace='catalog')),
     path('cart/', include('cart.urls')),
     path('account/', include('account.urls')),
     path('admin/', admin.site.urls),
